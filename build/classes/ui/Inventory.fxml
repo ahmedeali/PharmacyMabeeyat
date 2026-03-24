@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefWidth="1200.0" prefHeight="700.0"
+            xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.InventoryController">
+
+    <children>
+
+        <VBox spacing="10" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10">
+
+            <HBox spacing="10">
+                <TextField fx:id="txtSearch" promptText="Search Product" prefWidth="300"/>
+                <Button text="Search" onAction="#onSearch"/>
+                <Button text="Refresh" onAction="#onRefresh"/>
+            </HBox>
+
+            <TableView fx:id="tableInventory" prefHeight="550">
+                <columns>
+                    <TableColumn fx:id="colProduct" text="Product" prefWidth="200"/>
+                    <TableColumn fx:id="colBatch" text="Batch" prefWidth="150"/>
+                    <TableColumn fx:id="colExpiry" text="Expiry Date" prefWidth="150"/>
+                    <TableColumn fx:id="colQty" text="Quantity" prefWidth="100"/>
+                    <TableColumn fx:id="colPrice" text="Purchase Price" prefWidth="150"/>
+                </columns>
+            </TableView>
+
+        </VBox>
+
+    </children>
+</AnchorPane>

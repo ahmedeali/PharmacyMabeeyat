@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="PharmacyPOS.jnlp">
+  <information>
+    <title>PharmacyPOS</title>
+    <vendor>Ahmed Elhadi</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="PharmacyPOS.jar" size="45447" download="eager" />
+    <jar href="lib\mysql-connector-j-8.0.31.jar" size="2515447" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="PharmacyPOS" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="app.MainApp"  name="PharmacyPOS" />
+  <update check="always"/>
+</jnlp>

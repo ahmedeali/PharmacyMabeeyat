@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefWidth="1000.0" prefHeight="600.0"
+            xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.DashboardController">
+
+    <children>
+
+        <HBox prefWidth="1000.0" prefHeight="60.0" style="-fx-background-color: #2c3e50;">
+            <children>
+                <Label text="Pharmacy POS Dashboard"
+                       style="-fx-text-fill: white; -fx-font-size: 18px;"
+                       HBox.hgrow="ALWAYS">
+                    <HBox.margin>
+                        <Insets left="20"/>
+                    </HBox.margin>
+                </Label>
+            </children>
+        </HBox>
+
+        <VBox layoutY="80.0" layoutX="50.0" spacing="20">
+
+            <Button text="POS (Sales)"
+                    prefWidth="200"
+                    prefHeight="40"
+                    onAction="#openPOS"/>
+
+            <Button text="Purchasing"
+                    prefWidth="200"
+                    prefHeight="40"
+                    onAction="#openPurchase"/>
+
+            <Button text="Inventory"
+                    prefWidth="200"
+                    prefHeight="40"
+                    onAction="#openInventory"/>
+
+            <Button text="Expiry Dashboard"
+                    prefWidth="200"
+                    prefHeight="40"
+                    onAction="#openExpiry"/>
+
+            <Button text="Reports"
+                    prefWidth="200"
+                    prefHeight="40"
+                    onAction="#openReports"/>
+
+        </VBox>
+
+    </children>
+</AnchorPane>
